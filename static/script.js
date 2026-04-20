@@ -67,7 +67,7 @@ function getEmails() {
     return Array.from(inputs).map(i => i.value);
 }
 function saveContact() {
-   function saveContact() {
+    console.log("Saving...");
     const firstName = document.getElementById("firstName").value.trim();
     const lastName = document.getElementById("lastName").value.trim();
 
@@ -97,7 +97,6 @@ function saveContact() {
     }
 
     newContact();
-}
 }
 
 function deleteContact() {
