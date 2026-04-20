@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <aside id="contacts">
+            <h3>Contacts <span id="addbutton" onclick="newContact()">+</span></h3>
+            <div id="contactList"></div>
+         </aside>
+
+        <main id="contactForm">
+            <div style="display: flex; gap: 30px;">
+                    <div>
+                        <label class="labels" for="firstName">First Name</label><br>
+                        <input type="text" id="firstName">
+                    </div>
+
+                    <div>
+                        <label class="labels" for="lastName">Last Name</label><br>
+                        <input type="text" id="lastName"><br><br>
+                    </div> 
+            </div>
+            
+            <label class="labels">Email</label>
+            <div id="emails"></div>
+            <button id="addEmail" onclick="addEmail()"><span class="roundedBtn">+</span>add email</button><br><br><br>
+
+            <div id="buttons">
+                <button id="delete" onclick="deleteContact()">Delete</button>
+                <div>
+                    <button id="cancel" onclick="cancel()">Cancel</button>
+                    <button id="save" onclick="saveContact()">Save</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    
+</body>
+
+</html>

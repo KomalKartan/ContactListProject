@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: rgb(60, 59, 59);
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container {
+    display: flex;
+    width: 800px;
+    height: 550px;
+    background: rgb(250, 250, 250);
+}
+
+#contacts {
+width: 25%;
+display: flex;
+flex-direction: column;
+background-color: #f4f2f2;
+}
+
+h3{
+    display: flex;
+    gap: 8px;
+    margin: 0 0 10px 0;;
+    align-items: center;
+    font-size: x-large;
+    font-weight: normal;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+#addbutton{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%; 
+    border: none;
+    background: #2196F3;
+    color: white;
+    font-size: 20px;
+    font-weight: light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+#contactList{
+    font-size: small;
+    padding: 0;
+    margin: 0;
+}
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+.contact {
+    padding: 5px;
+    padding-left: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact:hover {
+    background: #f0f0f0;
+}
+
+.contact.selected{
+    background: #2196F3;  
+    color: white;
+}
+input{
+
+    border: 0.5px solid #2196F3;
+    padding: 5px;
+}
+.labels {
+    font-size: small;
+    padding-bottom: 5px;
+    
+}
+
+button {
+
+    border: none;
+    padding: 5px;
+    width: 80px;
+}
+#buttons{
+   
+    margin-top: auto;
+    display: flex;
+    gap: 250px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+#cancel{
+    background-color: white;
+    border: 1px solid #2196F3;
+    color: black;
+    margin-right: 20px;
+}
+#save{
+    background-color: #2196F3;
+    color: white;
+}
+#delete{
+    background-color: rgb(242, 51, 77);
+    color: white;
+
+}
+.removeButton{
+   width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgb(242, 51, 77);
+    color: white;
+    font-size: 20px;
+    font-weight: light;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+
+    transition: all 0.2s ease;
+
+}
+.email {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+#addEmail{
+    display: flex;
+    gap: 5px;
+    border: none;
+    width: 100px;
+    background: none;
+    color: #2196F3;
+    cursor: pointer;
+}
+.roundedBtn{
+
+    width: 18px;
+    height: 18px;
+    border-radius: 50%; 
+    border: none;
+    background: #2196F3; 
+    color: white; 
+    font-size: 20px;
+    font-weight: light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s ease;
+}
