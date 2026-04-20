@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import sqlite3
 import json
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static", template_folder="templates")
 
 def get_db():
     conn = sqlite3.connect("contacts.db")
@@ -77,5 +77,8 @@ def delete_contact(id):
     conn.close()
     return jsonify({"message": "Deleted"})
 
+@app.route("/test-js")
+def test_js():
+    return app.send_static_file("script.js")
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=10000)
